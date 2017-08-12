@@ -10,7 +10,7 @@ ENV MASTER_DEFAULT_PASSWORD "$REDIS_DEFAULT_PASSWORD"
 
 # base tunning for redis
 RUN echo "vm.overcommit_memory = 1" >> /etc/sysctl.conf;
-    #sysctl vm.overcommit_memory=1
+#sysctl vm.overcommit_memory=1
 
 COPY docker-entrypoint.sh /usr/local/bin/
 
