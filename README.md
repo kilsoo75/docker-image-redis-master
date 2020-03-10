@@ -9,9 +9,9 @@ The default masterauth and requirepass is 'redis1234'.
 If you want to change the password, please refer to the folowing examples.
 
 <pre><code>$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd -e MASTER_PASSWORD=your_pwd -p 6379:6379 kilso75/redis-master
-$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd -p 6379:6379 kilso75/redis-master
-$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd kilso75/redis-master</code></pre>
+$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd -p 6379:6379 kilsoo75/redis-master
+$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd kilsoo75/redis-master</code></pre>
 
 For the cluster using the sentinel, the requirepass and masterauth should be same. So you shoud set only the 'REDIS_PASSWORD' not set 'MASTER_PASSWORD' like following.
-<pre><code>$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd kilso75/redis-master</code></pre>
+<pre><code>$>docker run -d --name redis-master -e REDIS_PASSWORD=your_pwd kilsoo75/redis-master</code></pre>
 
